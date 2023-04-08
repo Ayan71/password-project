@@ -1,0 +1,31 @@
+<%-include("header")-%>
+
+<form
+  action="/users/create-session"
+  method="post"
+  class="rounded container mt-5 bg-dark p-5 text-light w-25"
+>
+  <div class="mb-3">
+    <label for="ayan" class="form-label">Email address </label>
+    <input
+      type="email"
+      name="email"
+      id="ayan"
+      class="form-control"
+      aria-describedby="emailHelp"
+    />
+    <div id="emailHelp" class="form-text text-warning">
+      We'll never share your email with anyone else.
+    </div>
+  </div>
+  <div>
+    <label for="ayan" class="form=label">Password</label>
+    <input type="password" name="password" id="ayan" class="form-control" />
+  </div>
+  <button type="submit" class=" w-25 btn btn-primary mt-3 w-25">Log in</button>
+  <ul class="navbar-nav   mt-3 text-primary"">
+    <li class="nav-item">
+      <a class="nav-link" href="/users/forgot-password">Forgotten account?</a>
+    </li>
+  </ul>
+</form>
